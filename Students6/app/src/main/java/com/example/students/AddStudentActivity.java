@@ -82,7 +82,8 @@ public class AddStudentActivity extends AppCompatActivity {
 
             db.insert("students", null, contentValues);
             db.close();
-            NavUtils.navigateUpFromSameTask(this);
+
+            finish();
         } catch (SQLiteException e){
             Toast toast = Toast.makeText(this,
                     e.getMessage(),

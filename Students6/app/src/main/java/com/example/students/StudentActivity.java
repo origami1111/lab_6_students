@@ -93,7 +93,7 @@ public class StudentActivity extends AppCompatActivity {
                     new String[] { studentNameStr });
 
             db.close();
-            NavUtils.navigateUpFromSameTask(this);
+            finish();
         } catch (SQLiteException e){
             Toast toast = Toast.makeText(this,
                     e.getMessage(),
@@ -114,7 +114,7 @@ public class StudentActivity extends AppCompatActivity {
                     new String[] { studentNameStr });
 
             db.close();
-            NavUtils.navigateUpFromSameTask(this);
+            finish();
         } catch (SQLiteException e){
             Toast toast = Toast.makeText(this,
                     e.getMessage(),
